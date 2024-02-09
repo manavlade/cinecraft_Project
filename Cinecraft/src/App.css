@@ -1,0 +1,762 @@
+/*
+home section
+*/
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-left: 200px;
+}
+.homeabout{
+  display: flex;
+}
+.hpara {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-top: 150px;
+}
+.para{
+  margin-right: 250px;
+}
+.home-img img{
+width: 450px;
+height: 450px;
+}
+.about{
+  display: flex;
+}
+.about-pic {
+  width: 450px;
+}
+.about-us{
+  padding-top: 55px;
+}
+.buttons{
+  padding: 25px;
+  gap: 2rem;
+  display: flex;
+  padding-bottom: 150px;
+  
+}
+@media screen and (min-width: 200px) and (max-width: 300px) {
+  .about {
+      display: flex;
+    }
+  .about-pic  {
+      width: 150px;
+      height: 150px;
+      
+    }
+  
+    .about-us p {
+      font-size: 2px;
+    }
+}
+
+/* Navbar */
+ul:hover li {
+  filter: blur(5px);
+  transition: 1.0s;
+}
+
+ul li:hover {
+  filter: blur(0px);
+  transition: 1.5s;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.nav-img {
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  gap: 1rem;
+ 
+}
+
+.site-title {
+  font-size: 3rem;
+ 
+  /* background: linear-gradient(to right, yellow, red, white);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; */
+}
+
+.navbar-nav li {
+  gap: 2rem;
+  justify-content: space-between;
+  font-size: medium;
+}
+/* Content */
+.screen{
+  display: flex;
+}
+.hyperContent{
+  justify-content: center;
+  padding-left: 20px;
+}
+.hyper a{
+text-decoration: none;
+color: black;
+}
+.hyper{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* Footer Section */
+.main-foot {
+  display: flex;
+  color: white;
+}
+
+.foot-about {
+  padding-top: 20px;
+  padding-left: 10px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.bMenu {
+  text-decoration: none;
+  padding-top: 20px;
+  padding-right: 250px;
+  padding-left: 20px;
+}
+
+.bMList {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.fhead {
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  margin-right: 110px;
+  padding-top: 30px;
+}
+
+.foot-about h2 {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bMList {
+  list-style: none;
+  padding: 20px;
+}
+
+.linked {
+  width: 40px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+.github {
+  width: 40px;
+  height: 30px;
+  color: white;
+  font-size: 30px;
+  padding-bottom: 50px;
+
+}
+
+.insta {
+  width: 40px;
+  height: 30px;
+  color: white;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+.gmaild {
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+.foot-p {
+  padding-left: 20px;
+  padding-right: 150px;
+}
+
+.site-credits {
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 200px) and (max-width: 299px) {
+  .main-foot {
+    display: flex;
+    color: white;
+    
+  }
+
+  .foot-about {
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: justify;
+    font-size: 5px;
+  }
+
+  .bMenu {
+    text-decoration: none;
+    padding-top: 40px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 5px;
+  }
+
+  .bMList {
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  .fhead {
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+
+  .foot-about h2 {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .bMList {
+    list-style: none;
+    padding: 10px;
+  }
+
+  .linked {
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-size: 10px;
+  }
+
+  .github {
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-size: 10px;
+
+  }
+
+  .insta {
+    width: 20px;
+    height: 20px;
+    color: linear-gradient(135deg, #405DE6 0%, #E4405F 100%);
+    font-size: 10px;
+  }
+
+  .gmaild {
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-size: 10px;
+  }
+
+  .foot-p {
+    padding-left: 10px;
+    padding-right: 5px;
+    justify-content: right;
+  }
+
+  .site-credits {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .main-foot {
+    display: flex;
+    color: white;
+  
+  }
+
+  .foot-about {
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: justify;
+    font-size: 10px;
+  }
+
+  .bMenu {
+    text-decoration: none;
+    padding-top: 80px;
+    padding-right: 15px;
+    padding-left: 10px;
+    font-size: 13px;
+  }
+
+  .bMList {
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  .fhead {
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+
+  .foot-about h2 {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .bMList {
+    list-style: none;
+    padding: 10px;
+  }
+
+  .linked {
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .github {
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+
+  }
+
+  .insta {
+    width: 40px;
+    height: 30px;
+    color: linear-gradient(135deg, #405DE6 0%, #E4405F 100%);
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .gmaild {
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .foot-p {
+    padding-left: 10px;
+    padding-right: 5px;
+    justify-content: right;
+  }
+
+  .site-credits {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  .main-foot {
+    display: flex;
+    color: white;
+    
+  }
+
+  .foot-about {
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: justify;
+    font-size: 10px;
+  }
+
+  .bMenu {
+    text-decoration: none;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-left: 10px;
+    font-size: 13px;
+  }
+
+  .bMList {
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  .fhead {
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+
+  .foot-about h2 {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .bMList {
+    list-style: none;
+    padding: 10px;
+  }
+
+  .linked {
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .github {
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+
+  }
+
+  .insta {
+    width: 40px;
+    height: 30px;
+    color: linear-gradient(135deg, #405DE6 0%, #E4405F 100%);
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .gmaild {
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .foot-p {
+    padding-left: 10px;
+    padding-right: 5px;
+    justify-content: right;
+  }
+
+  .site-credits {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  .main-foot {
+    display: flex;
+    color: white;
+    
+  }
+
+  .foot-about {
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .bMenu {
+    text-decoration: none;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-left: 10px;
+    font-size: 13px;
+  }
+
+  .bMList {
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  .fhead {
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+
+  .foot-about h2 {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .bMList {
+    list-style: none;
+    padding: 10px;
+  }
+
+  .linked {
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .github {
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+
+  }
+
+  .insta {
+    width: 40px;
+    height: 30px;
+    color: linear-gradient(135deg, #405DE6 0%, #E4405F 100%);
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .gmaild {
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .foot-p {
+    padding-left: 10px;
+    padding-right: 5px;
+    justify-content: right;
+  }
+
+  .site-credits {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  .main-foot {
+    display: flex;
+    color: white;
+    
+  }
+
+  .foot-about {
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .bMenu {
+    text-decoration: none;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-left: 10px;
+    font-size: 13px;
+  }
+
+  .bMList {
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  .fhead {
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+
+  .foot-about h2 {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .bMList {
+    list-style: none;
+    padding: 10px;
+  }
+
+  .linked {
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .github {
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+
+  }
+
+  .insta {
+    width: 40px;
+    height: 30px;
+    color: linear-gradient(135deg, #405DE6 0%, #E4405F 100%);
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .gmaild {
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .foot-p {
+    padding-left: 10px;
+    padding-right: 5px;
+    justify-content: right;
+  }
+
+  .site-credits {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+  .main-foot {
+    display: flex;
+    color: white;
+    
+  }
+
+  .foot-about {
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .bMenu {
+    text-decoration: none;
+    padding-top: 40px;
+    padding-right: 35px;
+    padding-left: 10px;
+    font-size: 13px;
+  }
+
+  .bMList {
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  .fhead {
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+
+  .foot-about h2 {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .bMList {
+    list-style: none;
+    padding: 5px;
+  }
+
+  .linked {
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .github {
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+
+  }
+
+  .insta {
+    width: 40px;
+    height: 30px;
+    color: linear-gradient(135deg, #405DE6 0%, #E4405F 100%);
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .gmaild {
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .foot-p {
+    padding-left: 2px;
+    padding-right: 5px;
+    justify-content: right;
+  }
+
+  .site-credits {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.phead {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+.phead:hover {
+  text-decoration: underline;
+}
