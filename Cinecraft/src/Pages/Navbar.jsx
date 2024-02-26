@@ -2,11 +2,16 @@ import React from "react";
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import logo from "../images/logo.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from "react-router-dom";
 
 const NAvbar = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary bg-black well" id='navbar'>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary bg-black well" id='navbar' style={{
+                position: "sticky",
+                top: "0",
+                zIndex: "100"
+            }}>
                 <div className="container-fluid">
                     <FontAwesomeIcon icon={faBars} bounce style={{
                         color: "black"
@@ -19,7 +24,7 @@ const NAvbar = () => {
                     </div>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent" >
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0" style={{
-                            fontSize: "large", paddingLeft: "50px"
+                            fontSize: "large"
                         }} >
                             <li className="nav-item" style={{
                                 fontSize: "large"
@@ -35,7 +40,7 @@ const NAvbar = () => {
                                 <a className="nav-link active" aria-current="page" href="#about" style={{
                                     color: "black",
                                     fontSize: '22px'
-                                }}  >About Us</a>
+                                }} >About Us</a>
                             </li>
                             <li className="nav-item" style={{
                                 fontSize: "large"
@@ -51,8 +56,7 @@ const NAvbar = () => {
                             }}  >
                                 <a className="nav-link active" aria-current="page" href="#Footer" style={{
                                     color: "black",
-                                    fontSize: '22px',
-                                    paddingRight: "420px"
+                                    fontSize: '22px'
                                 }}  >Connect </a>
                             </li>
                         </ul>

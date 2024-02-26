@@ -18,18 +18,9 @@ export default function Foter() {
                 </div>
                 <div className="bMenu">
                     <ul className='bMList'>
-                        <a className="nav-link active" href="#navbar" >Cinematography</a>
-                        <a className="nav-link active" aria-current="page" href="#about" >Movie Making</a>
-                        <a className="nav-link active" aria-current="page" href="#skill">Screenplay Writing</a>
-
-                    </ul>
-                </div>
-                <div className="bMenu">
-                    <ul className='bMList'>
-                        <a className="nav-link active" href="#navbar" >Home</a>
+                        <a className="nav-link active" href="#home" >Home</a>
                         <a className="nav-link active" aria-current="page" href="#about" >About Us</a>
-                        <a className="nav-link active" aria-current="page" href="#skill">Courses</a>
-                        
+                        <a className="nav-link active" aria-current="page" href="#courses">Courses</a>        
                     </ul>
                 </div>
                 <div className="footer">

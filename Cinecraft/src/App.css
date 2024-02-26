@@ -1,59 +1,258 @@
 /*
 home section
 */
-.main{
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hyper {
+  border: 0px solid white;
+  margin-right: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.main {
   display: flex;
   flex-wrap: wrap;
   gap: 5rem;
   margin-left: 200px;
 }
-.homeabout{
-  display: flex;
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-left: 20px;
+  }
 }
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    margin-left: 0px;
+  }
+}
+
 .hpara {
   padding-top: 50px;
   padding-left: 50px;
   padding-top: 150px;
 }
-.para{
+
+.para {
   margin-right: 250px;
 }
-.home-img img{
-width: 450px;
-height: 450px;
+
+.home-img img {
+  width: 450px;
+  height: 450px;
 }
-.about{
-  display: flex;
+
+/* Home section */
+@media screen and (min-width: 1000px) {
+  .homeabout {
+    display: flex;
+  }
 }
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .home-img img {
+    display: none;
+  }
+
+  .hpara {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .para {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .home-img img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .home-img {
+    padding-top: 25px;
+  }
+
+  .homeabout {
+    display: flex;
+  }
+
+  .hpara {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .para {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .home-img img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .home-img {
+    padding-top: 25px;
+  }
+
+  .homeabout {
+    display: flex;
+  }
+
+  .hpara {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .para {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .home-img img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .home-img {
+    padding-top: 25px;
+  }
+
+  .homeabout {
+    display: flex;
+  }
+
+  .hpara {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .para {
+    margin-right: 10px;
+  }
+}
+
+/* about section */
+
 .about-pic {
   width: 450px;
 }
-.about-us{
+
+.about-us {
   padding-top: 55px;
 }
-.buttons{
+
+.buttons {
   padding: 25px;
   gap: 2rem;
   display: flex;
   padding-bottom: 150px;
-  
+
 }
-@media screen and (min-width: 200px) and (max-width: 300px) {
+
+@media screen and (min-width: 800px) {
   .about {
-      display: flex;
-    }
-  .about-pic  {
-      width: 150px;
-      height: 150px;
-      
-    }
-  
-    .about-us p {
-      font-size: 2px;
-    }
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .about-pic {
+    display: none;
+
+  }
+
+  .about-us p {
+    font-size: 2px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .about {
+    display: flex;
+    padding-left: 20px;
+    justify-content: center;
+  }
+
+  .about-pic {
+    display: none;
+
+  }
+
+  .about-us p {
+    font-size: 1px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .about {
+    display: flex;
+    padding-left: 20px;
+    justify-content: center;
+  }
+
+  .about-pic {
+    width: 200px;
+    height: 200px;
+
+  }
+
+  .about-us p {
+    font-size: 1px;
+  }
+}
+
+/* course images */
+.screen-img {
+  width: 250px;
+  height: 250px;
+}
+
+.screen-img img {
+  align-items: center;
 }
 
 /* Navbar */
+
 ul:hover li {
   filter: blur(5px);
   transition: 1.0s;
@@ -73,16 +272,11 @@ ul li:hover {
   width: 60px;
   height: 60px;
   gap: 1rem;
- 
+
 }
 
 .site-title {
   font-size: 3rem;
- 
-  /* background: linear-gradient(to right, yellow, red, white);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text; */
 }
 
 .navbar-nav li {
@@ -90,75 +284,121 @@ ul li:hover {
   justify-content: space-between;
   font-size: medium;
 }
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+
+
+  .nav-img {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    gap: 1rem;
+
+  }
+
+  .site-title {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+
+
+  .nav-img {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    gap: 1rem;
+
+  }
+
+  .site-title {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+
+
+  .nav-img {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    gap: 1rem;
+
+  }
+
+  .site-title {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+
+
+  .nav-img {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    gap: 1rem;
+
+  }
+
+  .site-title {
+    font-size: 1rem;
+  }
+}
+
 /* Content */
-.screen{
+.screen {
   display: flex;
 }
-.hyperContent{
+
+.hyperContent {
   justify-content: center;
   padding-left: 20px;
 }
-.hyper a{
-text-decoration: none;
-color: black;
+
+.hyper a {
+  text-decoration: none;
+  color: black;
 }
-.hyper{
+
+.hyper {
   padding-right: 20px;
   padding-left: 20px;
 }
 
+
 /* Footer Section */
+
 .main-foot {
   display: flex;
   color: white;
+  justify-content: center;
 }
 
 .foot-about {
-  padding-top: 20px;
-  padding-left: 10px;
-  text-align: justify;
-  font-size: 20px;
+  padding-top: 40px;
 }
 
 .bMenu {
   text-decoration: none;
+  justify-content: center;
   padding-top: 20px;
-  padding-right: 250px;
-  padding-left: 20px;
-}
-
-.bMList {
-  text-decoration: none;
-  font-style: normal;
-}
-
-.fhead {
-  text-align: center;
+  padding-right: 300px;
+  padding-left: 60px;
+  font-size: larger;
 }
 
 .footer {
   display: flex;
-  margin-right: 110px;
   padding-top: 30px;
-}
-
-.foot-about h2 {
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .bMList {
   list-style: none;
   padding: 20px;
-}
-
-.linked {
-  width: 40px;
-  height: 30px;
-  color: #ffffff;
-  font-size: 30px;
-  padding-bottom: 50px;
 }
 
 .github {
@@ -186,102 +426,60 @@ color: black;
   padding-bottom: 50px;
 }
 
-.foot-p {
-  padding-left: 20px;
-  padding-right: 150px;
-}
-
-.site-credits {
-  text-align: center;
-  justify-content: center;
-}
 
 @media screen and (min-width: 200px) and (max-width: 299px) {
   .main-foot {
     display: flex;
     color: white;
-    
+    justify-content: center;
   }
 
   .foot-about {
-    padding-top: 10px;
-    padding-left: 10px;
-    text-align: justify;
-    font-size: 5px;
+    padding-top: 40px;
   }
 
   .bMenu {
     text-decoration: none;
-    padding-top: 40px;
-    padding-right: 5px;
-    padding-left: 5px;
-    font-size: 5px;
-  }
-
-  .bMList {
-    text-decoration: none;
-    font-style: normal;
-  }
-
-  .fhead {
-    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 300px;
+    padding-left: 60px;
+    font-size: larger;
   }
 
   .footer {
     display: flex;
-    margin-right: 10px;
-    padding-top: 10px;
-  }
-
-  .foot-about h2 {
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 30px;
   }
 
   .bMList {
     list-style: none;
-    padding: 10px;
-  }
-
-  .linked {
-    width: 20px;
-    height: 20px;
-    color: white;
-    font-size: 10px;
+    padding: 20px;
   }
 
   .github {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 30px;
     color: white;
-    font-size: 10px;
+    font-size: 30px;
+    padding-bottom: 50px;
 
   }
 
   .insta {
-    width: 20px;
-    height: 20px;
-    color: linear-gradient(135deg, #405DE6 0%, #E4405F 100%);
-    font-size: 10px;
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 50px;
   }
 
   .gmaild {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     color: white;
-    font-size: 10px;
-  }
-
-  .foot-p {
-    padding-left: 10px;
-    padding-right: 5px;
-    justify-content: right;
-  }
-
-  .site-credits {
-    text-align: center;
-    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 50px;
   }
 }
 
@@ -289,92 +487,55 @@ color: black;
   .main-foot {
     display: flex;
     color: white;
-  
+    justify-content: center;
   }
 
   .foot-about {
-    padding-top: 10px;
-    padding-left: 10px;
-    text-align: justify;
-    font-size: 10px;
+    padding-top: 40px;
   }
 
   .bMenu {
     text-decoration: none;
-    padding-top: 80px;
-    padding-right: 15px;
-    padding-left: 10px;
-    font-size: 13px;
-  }
-
-  .bMList {
-    text-decoration: none;
-    font-style: normal;
-  }
-
-  .fhead {
-    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: larger;
   }
 
   .footer {
     display: flex;
-    margin-right: 10px;
-    padding-top: 10px;
-  }
-
-  .foot-about h2 {
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 30px;
   }
 
   .bMList {
     list-style: none;
-    padding: 10px;
-  }
-
-  .linked {
-    width: 40px;
-    height: 30px;
-    color: white;
-    font-size: 25px;
-    padding-bottom: 40px;
+    padding: 20px;
   }
 
   .github {
     width: 40px;
     height: 30px;
     color: white;
-    font-size: 25px;
-    padding-bottom: 40px;
+    font-size: 30px;
+    padding-bottom: 50px;
 
   }
 
   .insta {
     width: 40px;
     height: 30px;
-    color: linear-gradient(135deg, #405DE6 0%, #E4405F 100%);
-    font-size: 25px;
-    padding-bottom: 40px;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 50px;
   }
 
   .gmaild {
     width: 40px;
-    height: 30px;
+    height: 40px;
     color: white;
-    font-size: 25px;
-    padding-bottom: 40px;
-  }
-
-  .foot-p {
-    padding-left: 10px;
-    padding-right: 5px;
-    justify-content: right;
-  }
-
-  .site-credits {
-    text-align: center;
-    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 50px;
   }
 }
 
@@ -382,92 +543,55 @@ color: black;
   .main-foot {
     display: flex;
     color: white;
-    
+    justify-content: center;
   }
 
   .foot-about {
-    padding-top: 10px;
-    padding-left: 10px;
-    text-align: justify;
-    font-size: 10px;
+    padding-top: 40px;
   }
 
   .bMenu {
     text-decoration: none;
-    padding-top: 40px;
-    padding-right: 15px;
-    padding-left: 10px;
-    font-size: 13px;
-  }
-
-  .bMList {
-    text-decoration: none;
-    font-style: normal;
-  }
-
-  .fhead {
-    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 40px;
+    font-size: larger;
   }
 
   .footer {
     display: flex;
-    margin-right: 10px;
-    padding-top: 10px;
-  }
-
-  .foot-about h2 {
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 30px;
   }
 
   .bMList {
     list-style: none;
-    padding: 10px;
-  }
-
-  .linked {
-    width: 40px;
-    height: 30px;
-    color: white;
-    font-size: 25px;
-    padding-bottom: 40px;
+    padding: 20px;
   }
 
   .github {
     width: 40px;
     height: 30px;
     color: white;
-    font-size: 25px;
-    padding-bottom: 40px;
+    font-size: 30px;
+    padding-bottom: 50px;
 
   }
 
   .insta {
     width: 40px;
     height: 30px;
-    color: linear-gradient(135deg, #405DE6 0%, #E4405F 100%);
-    font-size: 25px;
-    padding-bottom: 40px;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 50px;
   }
 
   .gmaild {
     width: 40px;
-    height: 30px;
+    height: 40px;
     color: white;
-    font-size: 25px;
-    padding-bottom: 40px;
-  }
-
-  .foot-p {
-    padding-left: 10px;
-    padding-right: 5px;
-    justify-content: right;
-  }
-
-  .site-credits {
-    text-align: center;
-    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 50px;
   }
 }
 
@@ -475,92 +599,55 @@ color: black;
   .main-foot {
     display: flex;
     color: white;
-    
+    justify-content: center;
   }
 
   .foot-about {
-    padding-top: 10px;
-    padding-left: 10px;
-    text-align: justify;
-    font-size: 15px;
+    padding-top: 40px;
   }
 
   .bMenu {
     text-decoration: none;
-    padding-top: 40px;
-    padding-right: 15px;
-    padding-left: 10px;
-    font-size: 13px;
-  }
-
-  .bMList {
-    text-decoration: none;
-    font-style: normal;
-  }
-
-  .fhead {
-    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 60px;
+    font-size: larger;
   }
 
   .footer {
     display: flex;
-    margin-right: 10px;
-    padding-top: 10px;
-  }
-
-  .foot-about h2 {
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 30px;
   }
 
   .bMList {
     list-style: none;
-    padding: 10px;
-  }
-
-  .linked {
-    width: 40px;
-    height: 30px;
-    color: white;
-    font-size: 25px;
-    padding-bottom: 40px;
+    padding: 20px;
   }
 
   .github {
     width: 40px;
     height: 30px;
     color: white;
-    font-size: 25px;
-    padding-bottom: 40px;
+    font-size: 30px;
+    padding-bottom: 50px;
 
   }
 
   .insta {
     width: 40px;
     height: 30px;
-    color: linear-gradient(135deg, #405DE6 0%, #E4405F 100%);
-    font-size: 25px;
-    padding-bottom: 40px;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 50px;
   }
 
   .gmaild {
     width: 40px;
-    height: 30px;
+    height: 40px;
     color: white;
-    font-size: 25px;
-    padding-bottom: 40px;
-  }
-
-  .foot-p {
-    padding-left: 10px;
-    padding-right: 5px;
-    justify-content: right;
-  }
-
-  .site-credits {
-    text-align: center;
-    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 50px;
   }
 }
 
@@ -568,92 +655,55 @@ color: black;
   .main-foot {
     display: flex;
     color: white;
-    
+    justify-content: center;
   }
 
   .foot-about {
-    padding-top: 10px;
-    padding-left: 10px;
-    text-align: justify;
-    font-size: 15px;
+    padding-top: 40px;
   }
 
   .bMenu {
     text-decoration: none;
-    padding-top: 40px;
-    padding-right: 15px;
-    padding-left: 10px;
-    font-size: 13px;
-  }
-
-  .bMList {
-    text-decoration: none;
-    font-style: normal;
-  }
-
-  .fhead {
-    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 60px;
+    font-size: larger;
   }
 
   .footer {
     display: flex;
-    margin-right: 10px;
-    padding-top: 10px;
-  }
-
-  .foot-about h2 {
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 30px;
   }
 
   .bMList {
     list-style: none;
-    padding: 10px;
-  }
-
-  .linked {
-    width: 40px;
-    height: 30px;
-    color: white;
-    font-size: 25px;
-    padding-bottom: 40px;
+    padding: 20px;
   }
 
   .github {
     width: 40px;
     height: 30px;
     color: white;
-    font-size: 25px;
-    padding-bottom: 40px;
+    font-size: 30px;
+    padding-bottom: 50px;
 
   }
 
   .insta {
     width: 40px;
     height: 30px;
-    color: linear-gradient(135deg, #405DE6 0%, #E4405F 100%);
-    font-size: 25px;
-    padding-bottom: 40px;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 50px;
   }
 
   .gmaild {
     width: 40px;
-    height: 30px;
+    height: 40px;
     color: white;
-    font-size: 25px;
-    padding-bottom: 40px;
-  }
-
-  .foot-p {
-    padding-left: 10px;
-    padding-right: 5px;
-    justify-content: right;
-  }
-
-  .site-credits {
-    text-align: center;
-    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 50px;
   }
 }
 
@@ -661,92 +711,55 @@ color: black;
   .main-foot {
     display: flex;
     color: white;
-    
+    justify-content: center;
   }
 
   .foot-about {
-    padding-top: 10px;
-    padding-left: 20px;
-    text-align: justify;
-    font-size: 15px;
+    padding-top: 40px;
   }
 
   .bMenu {
     text-decoration: none;
-    padding-top: 40px;
-    padding-right: 35px;
-    padding-left: 10px;
-    font-size: 13px;
-  }
-
-  .bMList {
-    text-decoration: none;
-    font-style: normal;
-  }
-
-  .fhead {
-    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 60px;
+    font-size: larger;
   }
 
   .footer {
     display: flex;
-    margin-right: 10px;
-    padding-top: 10px;
-  }
-
-  .foot-about h2 {
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 30px;
   }
 
   .bMList {
     list-style: none;
-    padding: 5px;
-  }
-
-  .linked {
-    width: 40px;
-    height: 30px;
-    color: white;
-    font-size: 25px;
-    padding-bottom: 40px;
+    padding: 20px;
   }
 
   .github {
     width: 40px;
     height: 30px;
     color: white;
-    font-size: 25px;
-    padding-bottom: 40px;
+    font-size: 30px;
+    padding-bottom: 50px;
 
   }
 
   .insta {
     width: 40px;
     height: 30px;
-    color: linear-gradient(135deg, #405DE6 0%, #E4405F 100%);
-    font-size: 25px;
-    padding-bottom: 40px;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 50px;
   }
 
   .gmaild {
     width: 40px;
-    height: 30px;
+    height: 40px;
     color: white;
-    font-size: 25px;
-    padding-bottom: 40px;
-  }
-
-  .foot-p {
-    padding-left: 2px;
-    padding-right: 5px;
-    justify-content: right;
-  }
-
-  .site-credits {
-    text-align: center;
-    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 50px;
   }
 }
 

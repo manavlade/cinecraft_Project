@@ -1,16 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
+import movie from '../images/cine.jpg';
+import story from '../images/story.jpg';
+import { Link } from "react-router-dom";
+import Accordion from 'react-bootstrap/Accordion';
 const Course = () => {
     return (
         <>
             <div className="phead" id="courses">
                 <h1 style={{
                     textAlign:"center" 
-                }}>Course</h1>
+                }}>Courses</h1>
             </div>
-           <div className="main" >
+           <div className="main flex flex-wrap " >
             <div className="card1">
                     <Card style={{ width: '18rem' }}>
                         <Card.Img variant="top" src="https://pbblogassets.s3.amazonaws.com/uploads/2015/11/Cinematography-Manual.jpg" />
@@ -20,35 +23,70 @@ const Course = () => {
                                 Some quick example text to build on the card title and make up the
                                 bulk of the card's content.
                             </Card.Text>
-                            <Button variant="primary">View Course</Button>
+                            <Link to= "/Cinematography" >
+                                <Button variant="primary">View Course</Button>
+                            </Link>
                         </Card.Body>
                     </Card>
             </div>
             <div className="card2">
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="https://pbblogassets.s3.amazonaws.com/uploads/2015/11/Cinematography-Manual.jpg" />
+                        <Card.Img variant="top" src={story} />
                         <Card.Body>
-                            <Card.Title>Movie Making</Card.Title>
+                            <Card.Title> Screenplay Writing</Card.Title>
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the
                                 bulk of the card's content.
                             </Card.Text>
-                            <Button variant="primary">View Course</Button>
+                            <Link to= "/screenplay">
+                                <Button variant="primary">View Course</Button>
+                            </Link>
+                            
                         </Card.Body>
                     </Card>
             </div>
             <div className="card3">
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="https://pbblogassets.s3.amazonaws.com/uploads/2015/11/Cinematography-Manual.jpg" />
+                        <Card.Img variant="top" src={movie} />
                         <Card.Body>
-                            <Card.Title>Screenplay Writing </Card.Title>
+                            <Card.Title>Movie Making </Card.Title>
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the
                                 bulk of the card's content.
                             </Card.Text>
-                            <Button variant="primary">View Course</Button>
+                            <Link to= "/moviemaking">
+                                <Button variant="primary">View Course</Button>
+                            </Link>
                         </Card.Body>
                     </Card>
+            </div>
+           </div>
+           <div className="conatiner">
+                <h2 className="text-center pt-5 pb-5 phead ">Frequently asked Questions </h2>
+            <div className="acord">
+                    <Accordion defaultActiveKey="0"  >
+                        <Accordion.Item eventKey="0">
+                            <Accordion.Header> <b>Why should I learn from here</b> </Accordion.Header>
+                            <Accordion.Body>
+                                1.)Comprehensive Content  <br />
+                                2.) Interactive Learning Experience: The course also contains images which will help in understanding the conecepts better. <br />                         
+                                3.)Flexible Learning Schedule: As the content is already present on the website so the learner can learn at its own speed. <br />
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header> <b>Is the content created by experienced proffesionals</b> </Accordion.Header>
+                            <Accordion.Body>
+                                Experienced Instructors: The content is created by experienced Proffesionals.  <br />   
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="2">
+                            <Accordion.Header> <b>Real-world Applications</b> </Accordion.Header>
+                            <Accordion.Body>
+                               The course is created in such a way that the learner gets to know how what the real world is like <br />
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
+                    
             </div>
            </div>
         </>

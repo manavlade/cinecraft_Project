@@ -1,6 +1,7 @@
 import React from 'react'
 import about from "../images/about.jpg";
 export default function About() {
+
     return (
         <>
             <div className="container" id='about' >
@@ -9,6 +10,9 @@ export default function About() {
                     paddingTop: "45px"
                 }} className='head'>About Us </h1>
                 <div className="about">
+                    <div className="ab-img">
+                        <img className='about-pic' src={about} alt="" srcset="" />
+                    </div>
                 <p className='about-us' id='color-mix' style={{
                     
                 }} >
@@ -21,7 +25,7 @@ export default function About() {
                             transformative power of storytelling in the world of filmmaking.
                     </h5>
                 </p>
-                <img className='about-pic' src={about} alt="" srcset="" />
+                
                 </div>
             </div>
         </>
