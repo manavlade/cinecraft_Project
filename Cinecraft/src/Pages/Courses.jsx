@@ -16,7 +16,9 @@ const Course = () => {
            <div className="main flex flex-wrap " >
             <div className="card1">
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="https://pbblogassets.s3.amazonaws.com/uploads/2015/11/Cinematography-Manual.jpg" />
+                        <Card.Img style={{
+                            height: "170px"
+                        }} variant="top" src="https://pbblogassets.s3.amazonaws.com/uploads/2015/11/Cinematography-Manual.jpg" />
                         <Card.Body>
                             <Card.Title>Cinematography</Card.Title>
                             <Card.Text>
@@ -31,7 +33,9 @@ const Course = () => {
             </div>
             <div className="card2">
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={story} />
+                        <Card.Img style={{
+                            height: "170px"
+                        }} variant="top" src={story} />
                         <Card.Body>
                             <Card.Title> Screenplay Writing</Card.Title>
                             <Card.Text>
@@ -47,7 +51,9 @@ const Course = () => {
             </div>
             <div className="card3">
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={movie} />
+                        <Card.Img style={{
+                            height: "170px"
+                        }} variant="top" src={movie} />
                         <Card.Body>
                             <Card.Title>Movie Making </Card.Title>
                             <Card.Text>
