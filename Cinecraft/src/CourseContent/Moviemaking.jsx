@@ -2,73 +2,18 @@ import React from 'react'
 import { useState } from 'react'
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-
+import { RedirectToSignIn, SignedIn, SignedOut } from '@clerk/clerk-react';
+import MovieLinks from './MLinks';
 export default function Moviemaking() {
   const navigate = useNavigate();
   return (
     <>
-      
+      <SignedIn>
         <div className="movieMaking" style={{
           display: "flex"
         }} >
           <div className={`hyper`} >
-            <h4>
-              <a href="#Intro">
-                Introduction
-              </a>
-              <br />
-              <br />
-              <a href="#Choosing">
-                Choosing Software
-              </a>
-              <br />
-              <br />
-              <a href="#Exploring">
-                Advanced Techniques
-              </a>
-              <br />
-              <br />
-              <a href="#Project Studies">
-                Project Studies
-              </a>
-              <br />
-              <br />
-              <a href="#Editing">
-                Editing Choices
-              </a>
-              <br />
-              <br />
-              <a href="# Documentary-Editing">
-                Documentary Editing
-              </a>
-              <br />
-              <br />
-              <a href="#Documentary-Citizenfour">
-                Documentary Citizenfour
-              </a>
-              <br />
-              <br />
-              <a href="#Software-Specific">
-                Software-Specific
-              </a>
-              <br />
-              <br />
-              <a href="#Polishing">
-                Polishing
-              </a>
-              <br />
-              <br />
-              <a href="#Conclusion">
-                Conclusion
-              </a>
-              <br />
-              <br />
-              <Button style={{
-                backgroundColor: "White",
-                color: "Blue",
-                fontSize: "20px"
-              }} onClick={() => navigate('/')} >Home page</Button>
-            </h4>
+           <MovieLinks/>
           </div>
           <div className="content">
             <div id='Intro'>
@@ -113,7 +58,7 @@ export default function Moviemaking() {
                 are beginners on a budget or seasoned professionals with specific feature requirements. This
                 guide aims to provide insights into factors to consider when choosing software,
                 recommendations based on budget and platform, a comparison chart of popular options, and a
-                detailed explanation of basic interface layouts , Cameras. <br /> 
+                detailed explanation of basic interface layouts , Cameras. <br />
                 <b>Factors to Consider:</b> <br />
                 <b>• Budget:</b> Consider your budget constraints when choosing editing software. While
                 professional-grade software often comes with a price tag, there are affordable and
@@ -171,7 +116,7 @@ export default function Moviemaking() {
                 i. Trimming is especially crucial for creating smooth transitions between
                 scenes, ensuring a natural flow. <br />
                 <b>• Splicing :</b> <br />
-                 Splicing involves combining multiple clips to form a continuous
+                Splicing involves combining multiple clips to form a continuous
                 sequence. Editors use splicing to connect scenes and create a cohesive
                 storyline. <br />
                 <b>• Selecting Clips :</b> <br />
@@ -237,7 +182,7 @@ export default function Moviemaking() {
                 directions. <br />
                 • Experimentation and iteration are key components of the non-linear editing
                 approach. <br />
-                  <h6>5. Collaboration:</h6>
+                <h6>5. Collaboration:</h6>
                 • NLE systems facilitate collaborative editing, allowing multiple editors to work
                 on different parts of the project simultaneously.
                 • Seamless integration with other post-production processes streamlines the
@@ -417,7 +362,7 @@ export default function Moviemaking() {
                 beginning. <br /> <br />
                 <h6>2. Building Tension :</h6>
                 • As the story unfolds, the editor controls pacing by choosing when to reveal
-                key information. 
+                key information.
                 • Through careful use of cuts, the tension can be heightened, leading to the
                 climax. <br /> <br />
                 <h6>3. Resolving Conflict :</h6>
@@ -678,7 +623,7 @@ export default function Moviemaking() {
             </div>
             <div id='Software-Specific'>
               <p>
-                 <h3> Title: Software-Specific Deep Dive: Advanced Features in Adobe Premiere Pro
+                <h3> Title: Software-Specific Deep Dive: Advanced Features in Adobe Premiere Pro
                   Advanced Titling and Graphics in Adobe Premiere Pro</h3>
                 <h6>Introduction:</h6>
                 Adobe Premiere Pro offers powerful tools for creating professional-looking titles and
@@ -779,7 +724,7 @@ export default function Moviemaking() {
                 <h6> 1. Title Sequences:</h6>
                 • Introduce your film with a captivating title sequence. Use creative fonts,
                 animations, or graphic elements that align with the tone and genre of your
-                project. <br /> 
+                project. <br />
                 • Consider integrating motion graphics or dynamic text animations for a visually
                 appealing introduction. <br /> <br />
                 <h6>2. End Credits:</h6>
@@ -800,7 +745,7 @@ export default function Moviemaking() {
                 overlays can add depth and atmosphere to the footage, further enhancing the
                 overall aesthetic. <br /> <br />
                 <h5> Correcting Technical Issues :</h5>
-                <h6>1. Color Correction:</h6> 
+                <h6>1. Color Correction:</h6>
                 • Perform a final color correction pass to ensure consistency across all shots.
                 Adjust exposure, color balance, and saturation for a cohesive visual
                 appearance. <br />
@@ -808,7 +753,7 @@ export default function Moviemaking() {
                 process. <br />
                 <h6>2. Audio Cleanup:</h6>
                 • Conduct a thorough audio cleanup to eliminate background noise, pops, or
-                other undesirable audio artifacts. <br /> 
+                other undesirable audio artifacts. <br />
                 • Ensure that dialogue is clear and well-balanced with the soundtrack or ambient
                 sounds. <br />
                 <h6>3. Visual Effects Touch-Ups:</h6>
@@ -835,7 +780,7 @@ export default function Moviemaking() {
                 in better quality but larger file sizes. <br />
                 <h6>3. Audio Compression:</h6>
                 • Export audio in a common format like AAC with a high bitrate for clear and
-                immersive sound. <br /> 
+                immersive sound. <br />
                 • Ensure that the audio levels are consistent and meet the platform's
                 specifications. <br /> <br />
                 <h5>DVDs and Physical Media:</h5>
@@ -958,7 +903,10 @@ export default function Moviemaking() {
             </div>
           </div>
         </div>
-     
+      </SignedIn>
+      <SignedOut>
+        <RedirectToSignIn/>
+      </SignedOut>
     </>
   )
 }

@@ -29,6 +29,7 @@ function App() {
           <Route path='/moviemaking' element={<Moviemaking />} />
         </Routes>
         <Foter />
+       
     </div>
     </>
   )
