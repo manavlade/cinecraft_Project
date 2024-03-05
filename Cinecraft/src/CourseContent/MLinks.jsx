@@ -21,7 +21,7 @@ export default function MovieLinks () {
     return (
         <>
             <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
-                Open
+                Topic Names
             </Button>
             <Drawer
                 isOpen={isOpen}
