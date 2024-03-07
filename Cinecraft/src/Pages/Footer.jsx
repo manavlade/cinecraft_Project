@@ -23,17 +23,7 @@ export default function Foter() {
             </div>
             <div>
                 <div className="main-foot bg-dark" id='Footer' >
-                    <div className="foot-about">
-                        <h2>CineCraft </h2>
-                    </div>
-                    <div className="bMenu">
-                        <ul className='bMList'>
-                            <a className="nav-link active" href="#home" >Home</a>
-                            <a className="nav-link active" aria-current="page" href="#about" >About Us</a>
-                            <a className="nav-link active" aria-current="page" href="#courses">Courses</a>
-                        </ul>
-                    </div>
-                    <div className="footer">
+                    <div className="footer" >
                         <ul>
                             <div className="github">
                                 <a href="https://www.facebook.com/people/Cine-Craft/pfbid02gmGcaZpqCaAp6okesj8KyBRcFTB2Po6fcTp8iXV72FfFcW8c1qBxXpkxXh9wFBBDl/?mibextid=ZbWKwL">
@@ -53,6 +43,17 @@ export default function Foter() {
 
                         </ul>
                     </div>
+                    <div className="foot-about">
+                        <h2>CineCraft </h2>
+                    </div>
+                    <div className="bMenu">
+                        <ul className='bMList'>
+                            <a className="nav-link active" href="#home" >Home</a>
+                            <a className="nav-link active" aria-current="page" href="#about" >About Us</a>
+                            <a className="nav-link active" aria-current="page" href="#courses">Courses</a>
+                        </ul>
+                    </div>
+                    
                 </div>
                 <p className='bg-dark text-white text-center flex flex-wrap'>Site Credits: This Website was built using {TechStack.join(', ')}. </p>
             </div>

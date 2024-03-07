@@ -58,10 +58,11 @@ home section
   }
 }
 
-.home-img img{
+.home-img img {
   width: 850px;
   height: 450px;
 }
+
 .hpara {
   padding-top: 50px;
   padding-left: 50px;
@@ -373,6 +374,8 @@ ul li:hover {
 .footer {
   display: flex;
   padding-top: 30px;
+  padding-left: 250px;
+  padding-right: 80px;
 }
 
 .bMList {
@@ -429,6 +432,8 @@ ul li:hover {
   .footer {
     display: flex;
     padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .bMList {
@@ -485,6 +490,8 @@ ul li:hover {
   .footer {
     display: flex;
     padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .bMList {
@@ -541,6 +548,8 @@ ul li:hover {
   .footer {
     display: flex;
     padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .bMList {
@@ -597,62 +606,8 @@ ul li:hover {
   .footer {
     display: flex;
     padding-top: 30px;
-  }
-
-  .bMList {
-    list-style: none;
-    padding: 20px;
-  }
-
-  .github {
-    width: 40px;
-    height: 30px;
-    color: white;
-    font-size: 30px;
-    padding-bottom: 50px;
-
-  }
-
-  .insta {
-    width: 40px;
-    height: 30px;
-    color: white;
-    font-size: 30px;
-    padding-bottom: 50px;
-  }
-
-  .gmaild {
-    width: 40px;
-    height: 40px;
-    color: white;
-    font-size: 30px;
-    padding-bottom: 50px;
-  }
-}
-
-@media screen and (min-width: 701px) and (max-width: 900px) {
-  .main-foot {
-    display: flex;
-    color: white;
-    justify-content: center;
-  }
-
-  .foot-about {
-    padding-top: 40px;
-  }
-
-  .bMenu {
-    text-decoration: none;
-    justify-content: center;
-    padding-top: 20px;
-    padding-right: 30px;
-    padding-left: 60px;
-    font-size: larger;
-  }
-
-  .footer {
-    display: flex;
-    padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   .bMList {
@@ -709,6 +664,8 @@ ul li:hover {
   .footer {
     display: flex;
     padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .bMList {
